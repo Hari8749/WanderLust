@@ -100,7 +100,7 @@ app.use('/listings/:id/reviews', reviewRouter);
 app.use('/', userRouter);
 
 app.get('/', (req, res) => {
-  res.send('<h1 style="text-align:center; margin-top:2rem;">Welcome to Wanderlust!</h1><p style="text-align:center;">Explore amazing travel destinations around the world.</p>');
+    res.render('home.ejs');
 });
 
 

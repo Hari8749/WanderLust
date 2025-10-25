@@ -88,3 +88,76 @@ body{
    height: 100px;
    width: 100px;
  }
+
+
+ .home-hero-section {
+    position: relative;
+    height: calc(100vh - 120px); 
+    min-height: 450px;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.home-hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: transform 0.4s ease-out;
+}
+
+.home-hero-section:hover::before {
+    transform: scale(1.05);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 800px; 
+}
+
+.hero-text h1 {
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text .lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text hr {
+    max-width: 300px;
+    margin: 1.5rem auto;
+    border-width: 2px;
+    opacity: 0.7;
+}
+
+.hero-text .btn {
+    font-weight: 600;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
