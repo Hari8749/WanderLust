@@ -100,7 +100,7 @@ app.use('/listings/:id/reviews', reviewRouter);
 app.use('/', userRouter);
 
 app.get('/', (req, res) => {
-    res.render('home.ejs');
+    res.render('listings/home.ejs');
 });
 
 
